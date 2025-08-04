@@ -1,5 +1,34 @@
 /*Colors to use: board: #EA3546, backgorund: #EFE9F4, general background: #61D1FD*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #61D1FD;
+}
 
 .title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #EFE9F4;
+    text-align: center; 
+    font-size: 50px;
+    font-weight: 700;
+}
 
+#board {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-radius: 25px;
+    background-color: #EA3546;
+    margin: auto;
+    width: 960px;
+    height: 960px;
+}
+
+#container { 
+    background-color: #EFE9F4;
+    margin-top: 20px;
+    width: 900px;
+    height: 900px;
 }
