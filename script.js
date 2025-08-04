@@ -3,7 +3,44 @@ const createButton = document.querySelector('#create');
 const MAX_SIZE = 900
 
 function sketch(cell) {
-    cell.style.backgroundColor = 'slategrey';
+    if (!cell.hasAttribute('data-color')) {
+        const random = Math.floor(Math.random() * 5);
+        let color;  
+        switch (random) {
+            case 0:
+                color = '#355070';
+                break;
+            case 1:
+                color = '#6D597A';
+                break;
+            case 2:
+                color = '#B56576';
+                break;
+            case 3:
+                color = '#E56B6F';
+                break;
+            case 4:
+                color = '#EAAC8B';
+                break;
+        }
+        cell.setAttribute('data-color', color);
+        cell.style.backgroundColor = color;
+    }
+    if (!cell.hasAttribute('data-opacity')) {
+        cell.setAttribute('data-opacity', "0.1");
+    } else {
+        const currentOpacity = parseFloat(cell.dataset.opacity);
+        console.log("current");
+        console.log(currentOpacity)
+        if (currentOpacity != 1) {  
+            const newOpacity = currentOpacity + 0.1;
+            console.log("new")
+            console.log(newOpacity)
+            cell.setAttribute('data-opacity', String(newOpacity));
+        }
+    }
+    console.log(cell.dataset.opacity)
+    cell.style.opacity = cell.dataset.opacity;
 }
 
 function createGrid(grid) {
