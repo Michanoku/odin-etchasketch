@@ -1,4 +1,3 @@
-/*Colors to use: board: #EA3546, backgorund: #EFE9F4, general background: #61D1FD*/
 * {
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,25 +8,18 @@ body {
     text-align: center;
 }
 
+.play-button {
+    width: 80px;
+    height: 80px;
+    background-color: #EFE9F4;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
 .title {
     color: #EFE9F4;
     font-size: 50px;
     font-weight: 700;
-}
-
-#create {
-    cursor: pointer;
-    border: 3px solid black;
-    border-radius: 15px;
-    padding: 10px 25px;
-    font-size: 30px;
-    margin: 10px;
-    color: black;
-    background-color: #EFE9F4;
-}
-
-#create:hover {
-    background-color: #D8C9E4;
 }
 
 #board {
@@ -50,18 +42,25 @@ body {
     margin-bottom: 20px;
 }
 
-.play-button {
-    width: 80px;
-    height: 80px;
-    background-color: #EFE9F4;
-    border: 3px solid black;
-    border-radius: 50%;
-}
-
 #container { 
     display: flex;
     width: 900px;
     flex-wrap: wrap;
     background-color: #EFE9F4;
     margin: 20px 0px;
+}
+
+#create {
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-size: 30px;
+    margin: 10px;
+    color: black;
+    background-color: #EFE9F4;
+}
+
+#create:hover {
+    background-color: #D8C9E4;
 }
