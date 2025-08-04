@@ -17,14 +17,31 @@ body {
 
 #board {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: start;
     border-radius: 25px;
     background-color: #EA3546;
+    border: 5px solid black;
     margin: auto;
     padding-left: 30px;
     padding-right: 30px;
     width: 960px;
+}
+
+#button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.play-button {
+    width: 80px;
+    height: 80px;
+    background-color: #EFE9F4;
+    border: 3px solid black;
+    border-radius: 50%;
 }
 
 #container { 
@@ -33,5 +50,5 @@ body {
     flex-wrap: wrap;
     background-color: #EFE9F4;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }

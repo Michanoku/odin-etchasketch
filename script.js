@@ -3,7 +3,7 @@ const MAX_WIDTH = 900
 let grid = 16;
 
 function sketch(cell) {
-    cell.style.backgroundColor = 'black';
+    cell.style.backgroundColor = 'slategrey';
 }
 
 document.addEventListener('DOMContentLoaded', () =>  {
