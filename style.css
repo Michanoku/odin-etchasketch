@@ -27,6 +27,8 @@ body {
 }
 
 #container { 
+    display: flex;
+    flex-wrap: wrap;
     background-color: #EFE9F4;
     margin-top: 20px;
     width: 900px;
