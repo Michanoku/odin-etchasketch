@@ -1,18 +1,33 @@
 /*Colors to use: board: #EA3546, backgorund: #EFE9F4, general background: #61D1FD*/
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
     background-color: #61D1FD;
+    text-align: center;
 }
 
 .title {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #EFE9F4;
-    text-align: center; 
     font-size: 50px;
     font-weight: 700;
+}
+
+#create {
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-size: 30px;
+    margin: 10px;
+    color: black;
+    background-color: #EFE9F4;
+}
+
+#create:hover {
+    background-color: #D8C9E4;
 }
 
 #board {
@@ -24,8 +39,7 @@ body {
     background-color: #EA3546;
     border: 5px solid black;
     margin: auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0px 30px;
     width: 960px;
 }
 
@@ -49,6 +63,5 @@ body {
     width: 900px;
     flex-wrap: wrap;
     background-color: #EFE9F4;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0px;
 }
