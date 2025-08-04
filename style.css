@@ -22,15 +22,16 @@ body {
     border-radius: 25px;
     background-color: #EA3546;
     margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
     width: 960px;
-    height: 960px;
 }
 
 #container { 
     display: flex;
+    width: 900px;
     flex-wrap: wrap;
     background-color: #EFE9F4;
     margin-top: 20px;
-    width: 900px;
-    height: 900px;
+    margin-bottom: 40px;
 }
