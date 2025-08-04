@@ -1,4 +1,5 @@
 const container = document.querySelector('#container');
+const createButton = document.querySelector('#create');
 const MAX_SIZE = 900
 
 function sketch(cell) {
@@ -6,6 +7,9 @@ function sketch(cell) {
 }
 
 function createGrid(grid) {
+    while (container.hasChildNodes()) {
+        container.removeChild(container.firstChild);
+    }
     const cellWidth = 100 / grid;
     const cellHeight = parseInt(MAX_SIZE / grid);
     for (i = 0; i < (grid * grid); i++ ) {
@@ -26,4 +30,13 @@ function createCell(cellWidth, cellHeight) {
 
 document.addEventListener('DOMContentLoaded', () =>  {
     createGrid(16);
+    createButton.addEventListener('click', () => {
+        const userInput = prompt("Enter grid size from 1 to 100:", "16");
+        const grid = parseInt(userInput);
+        if (grid === NaN || grid < 1 || grid > 100) {
+            alert("Please enter a number between 1 and 100")
+        } else {
+            createGrid(grid);
+        }
+    });
 })
